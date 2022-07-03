@@ -6,6 +6,9 @@ WORKDIR /app
 # Copy source code to working directory
 COPY . /app
 
+# upgrade pip
+RUN pip install --upgrade pip --no-cache-dir
+
 # Install packages from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 # hadolint ignore=DL3013
