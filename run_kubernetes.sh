@@ -7,13 +7,13 @@ dockerpath=nolwac/housing-price-predictor
 
 
 # Run the Docker Hub container with kubernetes
-# kubectl run predictor-app --image=$dockerpath --port=80
-kubectl create deployment predictor-app --image=$dockerpath
+kubectl run predictor-app --image=$dockerpath --port=80
+# kubectl create deployment predictor-app --image=$dockerpath
 
 # List kubernetes pods
 kubectl get pods
 
 # Forward the container port to a host
-kubectl port-forward deployment/predictor-app 8080:80
+kubectl port-forward pod/predictor-app 8000:80
 
 
