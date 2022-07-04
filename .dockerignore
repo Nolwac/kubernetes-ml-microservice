@@ -1,0 +1,7 @@
+.git
+*.md
+.circleci
+output_txt_files
+Dockerfile
+.gitignore
+*.sh
