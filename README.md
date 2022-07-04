@@ -85,3 +85,10 @@ Alternatively, you could look into *make_prediction.sh* bash script and edit the
 ## How it works
 The Algorithm is a pretrained model. The model data and the pretrained model can be found in *model_data* directory.
 Inside *app.py* is a **Flask** app definition that service the prediction model on an endpoint when called.
+
+## CI/CD
+This project integrates **CircleCI** for CI/CD. The CircleCI configuration file, *config.yml* can be found inside *.circleci* directory. That's the file CircleCI looks into for instructions on what to do in the Pipeline.
+
+As you may have notice, at the topmost level of this docs, just after the title is a CircleCI badge, which displays the current status of the Pipeline build. Here it is again.
+
+[![Nolwac](https://circleci.com/gh/Nolwac/kubernetes-ml-microservice.svg?style=svg)](https://circleci.com/gh/Nolwac/kubernetes-ml-microservice)
